@@ -9,7 +9,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="description" content="Free Web tutorials">
     <meta name="author" content="John Doe">
-    <meta http-equiv="refresh" content="30">
+    <!-- <meta http-equiv="refresh" content="30"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- LINKS -->
@@ -22,9 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/phone.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                         <a href="#hosts">Hébergement</a>
                     </li>
                     <li class="list_item">
-                        <a href="#">Activités</a>
+                        <a href="#activites">Activités</a>
                     </li>
                 </ul>
             </div>
@@ -86,128 +87,117 @@
         </section>
         <section class="hosts_container" id="hosts">
             <div class="hosts_left">
-                <h2 class="hl__title">Hébergement à Marseille</h2>
+                <h2 class="host__left__title">Hébergement à Marseille</h2>
                 <div class="hosts_reservation">
                     <ul class="hosts_list">
                         <li class="hosts_list__item">
-                            <img class="item__img"
+                            <img class="item__img" id="auberge"
                                 src="/assets/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                alt="Auberge La Cannebière">
-                            <div class="item__content">
-                                <a href="" class="text-reset">
+                                alt="Auberge La Cannebière" />
+                            <a href="#" class="text-reset">
+                                <div class="item__content">
                                     <h3 class="item__title">Auberge La Cannebière</h3>
-                                </a>
-                                <a href="" class="text-reset">
                                     <p class="item__price">Nuit à partir de <span>25€</span></p>
-                                </a>
-                                <ul class="item__list">
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </div>
+                                    <ul class="item__list">
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosts_list__item">
-                            <img class="item__img"
+                            <img class="item__img" id="hotel_1"
                                 src="/assets/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="Hôtel du port">
-                            <div class="item__content">
-                                <a href="" class="text-reset">
+                            <a href="#" class="text-reset">
+                                <div class="item__content">
                                     <h3 class="item__title">Hôtel du port</h3>
-                                </a>
-                                <a href="" class="text-reset">
                                     <p class="item__price">Nuit à partir de 52<span>€</span></p>
-                                </a>
-                                <ul class="item__list">
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </div>
+                                    <ul class="item__list">
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosts_list__item">
-                            <img class="item__img"
+                            <img class="item__img" id="hotel_2"
                                 src="/assets/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="Hôtel Les mouettes">
-                            <div class="item__content">
-                                <a href="" class="text-reset">
+                            <a href="#" class="text-reset">
+                                <div class="item__content">
                                     <h3 class="item__title">Hôtel Les mouettes</h3>
-                                </a>
-                                <a href="" class="text-reset">
                                     <p class="item__price">Nuit à partir de 76<span>€</span></p>
-                                </a>
-                                <ul class="item__list">
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </div>
+                                    <ul class="item__list">
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosts_list__item">
-                            <img class="item__img"
+                            <img class="item__img" id="hotel_3"
                                 src="/assets/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="Hôtel de la mer">
-                            <div class="item__content">
-                                <a href="" class="text-reset">
+                            <a href="#" class="text-reset">
+                                <div class="item__content">
                                     <h3 class="item__title">Hôtel de la mer</h3>
-                                </a>
-                                <a href="" class="text-reset">
                                     <p class="item__price">Nuit à partir de 46<span>€</span></p>
-                                </a>
-                                <ul class="item__list">
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </div>
+                                    <ul class="item__list">
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
                         </li>
                         <li class="hosts_list__item">
-                            <img class="item__img"
+                            <img class="item__img" id="auberge_2"
                                 src="/assets/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="Auberge Le Panier">
-                            <div class="item__content">
-                                <a href="" class="text-reset">
+                            <a href="#" class="text-reset">
+                                <div class="item__content">
                                     <h3 class="item__title">Auberge Le Panier</h3>
-                                </a>
-                                <a href="" class="text-reset">
                                     <p class="item__price">Nuit à partir de <span>23€</span></p>
-                                </a>
-                                <ul class="item__list">
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </div>
+                                    <ul class="item__list">
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosts_list__item">
-                            <img class="item__img"
+                            <img class="item__img" id="hotel_4"
                                 src="/assets/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="Hôtel chez Amina">
-                            <div class="item__content">
-                                <a href="" class="text-reset">
+                            <a href="#" class="text-reset">
+                                <div class="item__content">
                                     <h3 class="item__title">Hôtel chez Amina</h3>
-                                </a>
-                                <a href="" class="text-reset">
                                     <p class="item__price">Nuit à partir de 96<span>€</span></p>
-                                </a>
-                                <ul class="item__list">
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                    <li class="stars none"><i class="fa-solid fa-star"></i></li>
-                                </ul>
-                            </div>
+                                    <ul class="item__list">
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                        <li class="stars none"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <p class="hosts_left__add_more">Afficher plus</p>
@@ -220,16 +210,18 @@
                 </div>
                 <ul class="hosts_right__list">
                     <li class="hosts_right__list_item">
-                        <img class="hosts_right__list_item__image"
+                        <img class="hosts_right__list_item__image" id="hotel_5"
                             src="/assets/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Hôtel Le soleil du matin">
                         <div class="hosts_right__list_item_content">
-                            <a href="" class="text-reset">
-                                <h3 class="hr__lic__title">Hôtel Le soleil du matin</h3>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p class="hr__lic__price">Nuit à partir de 128<span>€</span></p>
-                            </a>
+                            <div class="hosts_right__list_item_content__container">
+                                <a href="#" class="text-reset">
+                                    <h3 class="hr__lic__title">Hôtel Le soleil du matin</h3>
+                                </a>
+                                <a href="#" class="text-reset">
+                                    <p class="hr__lic__price">Nuit à partir de 128<span>€</span></p>
+                                </a>
+                            </div>
                             <ul class="hr__lic__list">
                                 <li class="stars"><i class="fa-solid fa-star"></i></li>
                                 <li class="stars"><i class="fa-solid fa-star"></i></li>
@@ -240,16 +232,18 @@
                         </div>
                     </li>
                     <li class="hosts_right__list_item">
-                        <img class="hosts_right__list_item__image"
+                        <img class="hosts_right__list_item__image" id="hote"
                             src="/assets/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                            alt="Hôtel Le soleil du matin">
+                            alt="Au coeur de l'eau Chalbres d'hôtes">
                         <div class="hosts_right__list_item_content">
-                            <a href="" class="text-reset">
-                                <h3 class="hr__lic__title">Hôtel Le soleil du matin</h3>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p class="hr__lic__price">Nuit à partir de 128<span>€</span></p>
-                            </a>
+                            <div class="hosts_right__list_item_content__container">
+                                <a href="#" class="text-reset">
+                                    <h3 class="hr__lic__title">Au coeur de l'eau Chalbres d'hôtes</h3>
+                                </a>
+                                <a href="#" class="text-reset">
+                                    <p class="hr__lic__price">Nuit à partir de 71<span>€</span></p>
+                                </a>
+                            </div>
                             <ul class="hr__lic__list">
                                 <li class="stars"><i class="fa-solid fa-star"></i></li>
                                 <li class="stars"><i class="fa-solid fa-star"></i></li>
@@ -260,16 +254,18 @@
                         </div>
                     </li>
                     <li class="hosts_right__list_item">
-                        <img class="hosts_right__list_item__image"
+                        <img class="hosts_right__list_item__image" id="hotel_6"
                             src="/assets/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            alt="Hôtel Le soleil du matin">
+                            alt="Hôtel Tout bleu et Blanc">
                         <div class="hosts_right__list_item_content">
-                            <a href="" class="text-reset">
-                                <h3 class="hr__lic__title">Hôtel Le soleil du matin</h3>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p class="hr__lic__price">Nuit à partir de 128<span>€</span></p>
-                            </a>
+                            <div class="hosts_right__list_item_content__container">
+                                <a href="#" class="text-reset">
+                                    <h3 class="hr__lic__title">Hôtel Tout bleu et Blanc</h3>
+                                </a>
+                                <a href="#" class="text-reset">
+                                    <p class="hr__lic__price">Nuit à partir de 68<span>€</span></p>
+                                </a>
+                            </div>
                             <ul class="hr__lic__list">
                                 <li class="stars"><i class="fa-solid fa-star"></i></li>
                                 <li class="stars"><i class="fa-solid fa-star"></i></li>
@@ -282,41 +278,112 @@
                 </ul>
             </div>
         </section>
-        <section class="activites">
+        <section class="activites" id="activites">
             <h2>Activités à Marseille</h2>
             <ul class="activities__list">
-                <li class="activities__list_item" id="shadow">
-                    <img class="ali__img"
+                <li class="activities__list_item shadow">
+                    <img class="ali__img" id="port"
                         src="/assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Vieux ports">
-                    <h3 class="ali__text">Vieux ports</h3>
+                    <h3 class="card__txt">Vieux ports</h3>
                 </li>
-                <li class="activities__list_item cards">
-                    <div class="card_medium" id="shadow">
-                        <img class="card_medium__img"
-                            src="/assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Fort de Pomègues">
-                        <h3 class="ali__text">Fort de Pomègues</h3>
+                <li class="activities__list_item cards-column">
+                    <div class="card-sup-img shadow">
+                        <img src="/assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" id="fort"
+                            alt="Fort de Pomègues" />
+                        <h3 class="card__txt">Fort de Pomègues</h3>
                     </div>
-                    <div class="card_small">
+                    <div class="card-min-img shadow">
                         <img class="card_small__img"
                             src="/assets/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Îles du Frioul">
-                        <h3 class="ali__text">Îles du Frioul</h3>
+                            alt="Îles du Frioul" />
+                        <h3 class="card__txt">Îles du Frioul</h3>
                     </div>
                 </li>
-                <li class="activities__list_item"></li>
-                <li class="activities__list_item" id="shadow">
-                    <div class="card_medium"></div>
-                    <div class="card_small"></div>
+                <li class="activities__list_item shadow">
+                    <img class="ali__img" id="parc"
+                        src="/assets/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        alt="Parc National des Calanques">
+                    <h3 class="card__txt">Parc National des Calanques</h3>
+                </li>
+                <li class="activities__list_item cards-column">
+                    <div class="card-sup-img-2 shadow">
+                        <img src="/assets/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" id="dame"
+                            alt="Notre-Dame-de-La-Garde" />
+                        <h3 class="card__txt">Notre-Dame-de-La-Garde</h3>
+                    </div>
+                    <div class="card-min-img-2 shadow">
+                        <img class="card_small__img"
+                            src="/assets/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            alt="Parc Longchamp" />
+                        <h3 class="card__txt">Parc Longchamp</h3>
+                    </div>
                 </li>
             </ul>
         </section>
+        <footer>
+            <ul class="footer__list">
+                <li class="footer__list_item">
+                    <span>
+                        A propos
+                    </span>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Fonctionnement du site</p>
+                    </a>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Conditions générales de vente</p>
+                    </a>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Données et confidentialité</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list_item">
+                    <span>
+                        Nos hébergements
+                    </span>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Charte qualité</p>
+                    </a>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Soumettre votre hôtel</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list_item">
+                    <span>
+                        Assistance
+                    </span>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Centre d'aide</p>
+                    </a>
+                </li>
+                <li class="footer__list_item">
+                    <a href="#" class="text-reset">
+                        <p>Nous contacter</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </main>
 
     <!-- SCRIPT -->
     <script src="https://kit.fontawesome.com/17e6e33618.js" crossorigin="anonymous"></script>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
